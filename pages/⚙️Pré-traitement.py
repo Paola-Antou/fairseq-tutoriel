@@ -197,9 +197,9 @@ def afficher_architecture_concepts():
     # Affichage de la notification à la fin
     if st.button("Commencer l'exercice"):
         st.success("Bonne chance pour l'exercice !")
-        os.system('streamlit run pages\Evaluation.py')
+        st.switch_page('pages\Evaluation.py')
     if st.button("Pas maintenant"):
-        os.system('streamlit run pages\⚡fine_tuning_optimisation.py')
+        st.switch_page('pages\⚡fine_tuning_optimisation.py')
 
     
 if __name__ == "__main__":
