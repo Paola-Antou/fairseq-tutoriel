@@ -44,7 +44,7 @@ def afficher_tutoriel():
     # Bouton pour accéder à la deuxième page (second.py)
     if st.button("Commencer "):
         # Utilisation de os.system pour lancer second.py
-        os.system('streamlit run pages/📚Prérequis.py')
+        st.switch_page('pages/📚Prérequis.py')
 
 
 
