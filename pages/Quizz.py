@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 # Fonction pour afficher le quiz
 def afficher_quiz():
@@ -11,7 +10,6 @@ def afficher_quiz():
 
     st.header(':blue[Quiz Fairseq]')
     st.write("Testez vos connaissances sur Fairseq après avoir suivi le tutoriel.😉")
-    st.write("---")
 
     # Questions et options du quiz
     questions = {
@@ -59,15 +57,20 @@ def afficher_quiz():
     # Stocker les réponses de l'utilisateur
     reponses_utilisateur = {}
 
-    # Affichage des questions
-    for question, options in questions.items():
-        st.write(f"**{question}**")
-        reponse = st.radio(f"Sélectionnez une réponse pour: {question}", options)
-        reponses_utilisateur[question] = reponse
-        st.write(" ")
+    # Créer un formulaire pour le quiz
+    with st.form("quiz_form"):
+        # Affichage des questions dans le formulaire
+        for question, options in questions.items():
+            st.write(f"**{question}**")
+            reponse = st.radio(f"Sélectionnez une réponse pour: {question}", options)
+            reponses_utilisateur[question] = reponse
+            st.write(" ")
 
-    # Bouton de soumission
-    if st.button("Soumettre"):
+        # Bouton de soumission à l'intérieur du formulaire
+        submit_button = st.form_submit_button("Soumettre")
+
+    # Affichage des résultats après soumission
+    if submit_button:
         st.write("### Résultats du quiz:")
         score = 0
         for question, bonne_reponse in reponses_correctes.items():
@@ -80,9 +83,10 @@ def afficher_quiz():
 
         # Bouton pour accéder à la deuxième page (second.py)
         if st.button("Passez à l'étape suivante "):
-        # Utilisation de os.system pour lancer second.py
-            os.system('streamlit run pages/💻Installation.py')
+            # Utilisation de os.system pour lancer second.py
+            st.switch_page('pages/💻Installation.py')
 
 # Afficher le quiz
 if __name__ == "__main__":
     afficher_quiz()
+
