@@ -130,7 +130,7 @@ def afficher_fine_tuning_optimisation():
     """) 
     if st.button("Commencer l'exercice"):
         st.success("Bonne chance pour l'exercice !")
-        os.system('streamlit run pages\Exercice.py')
+        st.switch_page('pages\Exercice.py')
 # Afficher la page
 if __name__ == "__main__":
     afficher_fine_tuning_optimisation()
