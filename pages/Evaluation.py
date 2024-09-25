@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import subprocess
-import os
+
 
 # Titre de la page
 st.title("Évaluation des commandes de prétraitement et d'entraînement - Fairseq")
