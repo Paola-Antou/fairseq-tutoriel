@@ -1,5 +1,4 @@
 streamlit
 numpy
 pandas
-fairseq==0.10.2
-
+fairseq
