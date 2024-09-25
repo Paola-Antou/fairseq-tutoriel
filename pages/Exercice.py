@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 def afficher_exercices_fine_tuning_optimisation():
     # Configuration de la page
