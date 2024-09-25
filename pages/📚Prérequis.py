@@ -68,7 +68,7 @@ def afficher_tutoriel():
     if st.button("Commencer l'exercice🏆 "):
         st.success("Bonne chance pour l'exercice !")
         # Utilisation de os.system pour lancer second.py
-        os.system('streamlit run pages\Quizz.py')
+        st.switch_page('pages\Quizz.py')
 
 if __name__ == "__main__":
     afficher_tutoriel()
