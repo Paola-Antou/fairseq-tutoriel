@@ -10,7 +10,7 @@ st.title("Évaluation des commandes de prétraitement et d'entraînement - Fairs
 st.header("Section 1: Exploration du Dataset")
 
 # Charger et afficher le dataset
-dataset_path = 'pages\French_to_fongbe.csv'
+dataset_path = 'pages/French_to_fongbe.csv'
 df = pd.read_csv(dataset_path)
 
 # Montrer les premières lignes

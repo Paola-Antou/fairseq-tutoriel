@@ -84,7 +84,7 @@ def afficher_quiz():
         # Bouton pour accéder à la deuxième page (second.py)
         if st.button("Passez à l'étape suivante "):
             # Utilisation de os.system pour lancer second.py
-            st.switch_page('pages/💻Installation.py')
+            st.switch_page('3_💻Installation.py')
 
 # Afficher le quiz
 if __name__ == "__main__":
