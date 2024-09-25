@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 def afficher_architecture_concepts():
     # Configuration de la page
