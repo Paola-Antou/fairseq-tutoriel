@@ -196,9 +196,9 @@ def afficher_architecture_concepts():
     # Affichage de la notification à la fin
     if st.button("Commencer l'exercice"):
         st.success("Bonne chance pour l'exercice !")
-        st.switch_page('pages/Evaluation.py')
-    if st.button("Pas maintenant"):
         st.switch_page('pages/5_Evaluation.py')
+    if st.button("Pas maintenant"):
+        st.switch_page('pages/6_⚡fine_tuning_optimisation.py')
 
     
 if __name__ == "__main__":
