@@ -91,6 +91,6 @@ def afficher_installation():
         # Bouton pour accéder à la deuxième page (second.py)
     if st.button("Suivant"):
         # Utilisation de os.system pour lancer second.py
-        st.switch_page('4_⚙️Pré-traitement.py')
+        st.switch_page('pages/4_⚙️Pré-traitement.py')
 if __name__ == "__main__":
     afficher_installation()
