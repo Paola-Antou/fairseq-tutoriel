@@ -1,5 +1,4 @@
 import streamlit as st
-import os
 
 def afficher_installation():
     # Configuration de la page
