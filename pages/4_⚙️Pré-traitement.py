@@ -198,7 +198,7 @@ def afficher_architecture_concepts():
         st.success("Bonne chance pour l'exercice !")
         st.switch_page('pages\Evaluation.py')
     if st.button("Pas maintenant"):
-        st.switch_page('5_Evaluation.py')
+        st.switch_page('pages/5_Evaluation.py')
 
     
 if __name__ == "__main__":
