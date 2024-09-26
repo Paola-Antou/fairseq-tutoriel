@@ -130,7 +130,7 @@ def afficher_fine_tuning_optimisation():
     """) 
     if st.button("Commencer l'exercice"):
         st.success("Bonne chance pour l'exercice !")
-        st.switch_page('7_Exercice.py')
+        st.switch_page('pages/7_Exercice.py')
 # Afficher la page
 if __name__ == "__main__":
     afficher_fine_tuning_optimisation()
