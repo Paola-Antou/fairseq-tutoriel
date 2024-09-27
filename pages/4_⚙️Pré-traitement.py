@@ -1,4 +1,6 @@
 import streamlit as st
+import webbrowser
+
 
 def afficher_architecture_concepts():
     # Configuration de la page
@@ -199,7 +201,8 @@ def afficher_architecture_concepts():
         st.switch_page('pages/5_Evaluation.py')
     if st.button("Pas maintenant"):
         st.switch_page('pages/6_⚡fine_tuning_optimisation.py')
-
+    if st.button('Aller votre exercice sur Kaggle'):
+    webbrowser.open_new_tab('https://www.kaggle.com/code/paoladagba/evaluation-fairseq-tutoriel/edit')
     
 if __name__ == "__main__":
     afficher_architecture_concepts()
